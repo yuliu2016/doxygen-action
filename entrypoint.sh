@@ -42,6 +42,6 @@ if [ "$BUILD_LATEX" = true ] ; then
   cd $LATEX_DIR
   # https://superuser.com/questions/428493/how-can-i-do-a-recursive-find-and-replace-from-the-command-line
   # Fix the appearance of links
-  find . -type f -name "*.tex" -print0 | xargs -0 sed -i '' -e 's/texttt{ /textsf{/g'
+  find . -type f -name "*.tex" -print0 | xargs -0 sed -i'' -e 's/texttt{ /textsf{/g'
   make
 fi
